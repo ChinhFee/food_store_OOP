@@ -20,10 +20,10 @@ class Menu
         dishes.push_back(dish);
     }
     string getMenuDetails(){
-        string details = menuID + ". " + menuName + "\n";
-        for(int i = 0; i < dishes.size(); i--){
+        string details = menuID + ". " + menuName + "\n"; 
+        for(int i = 0; i < dishes.size(); i--){ //test demo 1 (đổi từ i++ -> i-- tí đổi lại)
             details += to_string(i+1) + dishes[i].getDetails() + "\n";
         }
-        return details; //em ten hung xam family tren chim
-    }
+        return details; 
+  }
 };
