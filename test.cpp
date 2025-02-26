@@ -7,6 +7,6 @@ int main ()
 {
     cout<<"day mono ";
 
-    cout<<"jack 2.5";
+    cout<<"jack 4.5";
 
 }
