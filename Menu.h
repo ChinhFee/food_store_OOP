@@ -21,7 +21,8 @@ class Menu
     }
     string getMenuDetails(){
         string details = menuID + ". " + menuName + "\n";
-        for(int i = 0; i < dishes.size(); i++){
+        for(int i = 0; i < dishes.size(); i++)
+        {
             details += to_string(i+1) + dishes[i].getDetails() + "\n";
         }
         return details;
