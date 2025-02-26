@@ -4,7 +4,7 @@
 #include "Dish.h"
 
 using namespace std;
-// danhuy đã can thiệp vào đây
+
 class Menu
 {
     private:
@@ -20,10 +20,11 @@ class Menu
         dishes.push_back(dish);
     }
     string getMenuDetails(){
-        string details = menuID + ". " + menuName + "\n"; 
-        for(int i = 0; i < dishes.size(); i++){ 
+        string details = menuID + ". " + menuName + "\n";
+        for(int i = 0; i < dishes.size(); i++)
+        {
             details += to_string(i+1) + dishes[i].getDetails() + "\n";
         }
-        return details; 
-  }
+        return details;
+    }
 };
