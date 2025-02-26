@@ -5,6 +5,6 @@ using namespace std;
 
 int main ()
 {
-    cout<<"day la ";
+    cout<<"day mono ";
 
 }
