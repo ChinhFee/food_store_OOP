@@ -7,12 +7,13 @@ class Dish
     private:
         int dishID;
         string dishName;
-        double price;
+        double gia;
     public:
-        Dish(int dishID, string dishName, double price, string description){
+    //sửa lại gia -> price  để phù hợp với tên biến ở dưới
+        Dish(int dishID, string dishName, double gia, string description){
             this->dishID = dishID;
             this->dishName = dishName;
-            this->price = price;
+            this->price = gia;
         }
         string getDetails(){
             return dishID + ". " + dishName + ": $" + to_string(price);
